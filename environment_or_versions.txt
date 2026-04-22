@@ -1,0 +1,15 @@
+Example software environment
+- MATLAB R2023a
+- SPM
+- DPABI / DPARSF
+- GRETNA
+- BrainNet Viewer
+- Python 3.x
+  - Pillow
+  - NumPy
+  - pandas
+  - matplotlib
+- R 4.4.2 (optional downstream statistics outside this package)
+
+Local paths and installation-specific settings should be configured by the user.
+Raw ADNI imaging and clinical data are not redistributed in this repository.

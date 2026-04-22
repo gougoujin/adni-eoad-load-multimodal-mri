@@ -1,0 +1,47 @@
+Path	Category	Priority	Purpose
+code/analysis/match_structural_and_functional_subjects.m	analysis	core	Match subjects with available structural and functional connectivity files.
+code/analysis/compute_global_sc_fc_coupling.m	analysis	core	Compute subject-level mean structural-functional coupling from matched SC and FC matrices.
+code/analysis/compute_regional_sc_fc_coupling.m	analysis	core	Compute ROI-level structural-functional coupling for all matched subjects.
+code/analysis/fit_global_coupling_glm.m	analysis	core	Fit age/sex-adjusted group models for mean structural-functional coupling.
+code/analysis/fit_regional_coupling_glm.m	analysis	core	Fit ROI-wise age/sex-adjusted group models for regional structural-functional coupling.
+code/analysis/compute_sdi_for_subject.m	analysis	core	Compute the structural decoupling index for one subject from SC and ROI time series.
+code/analysis/compute_sdi_for_cohort.m	analysis	core	Compute structural decoupling index for all matched subjects.
+code/analysis/fit_regional_sdi_glm.m	analysis	core	Fit ROI-wise age/sex-adjusted group models for structural decoupling index.
+code/analysis/build_subject_structural_connectivity_from_probtrackx.m	analysis	core	Build a 116x116 structural connectivity matrix for one subject from probtrackx outputs.
+code/analysis/build_cohort_structural_connectivity_from_probtrackx.m	analysis	core	Batch-build structural connectivity matrices for all subjects from probtrackx outputs.
+code/analysis/extract_roi_diffusion_metrics.m	analysis	core	Extract ROI-level diffusion metrics such as FA and MD from subject images.
+code/analysis/fit_roi_diffusion_glm.m	analysis	core	Fit age/sex-adjusted ROI-wise diffusion metric models.
+code/analysis/summarize_gretna_bonferroni_results.m	analysis	core	Summarize Bonferroni-corrected GRETNA nodal results into master/detail tables.
+code/analysis/run_patient_only_age_sensitivity_analyses.m	analysis	core	Run disease-only age-handling sensitivity analyses across principal positive domains.
+code/analysis/run_coupling_sensitivity_and_clinical_models.m	analysis	core	Run sensitivity and clinical-association models focused on coupling results.
+code/analysis/run_multimodal_clinical_association_models.m	analysis	core	Run multimodal clinical association models integrating GRETNA and functional metrics.
+code/figures/figure_frontal_coupling_violin.m	figures	core	Create the frontal regional coupling violin-panel figure used in the manuscript.
+code/figures/figure_assemble_main_panel.m	figures	core	Assemble a composite main figure panel from previously exported images.
+code/figures/figure_gretna_roi_heatmap.m	figures	core	Create a heatmap summarizing recurrent GRETNA nodal findings.
+code/figures/figure_sensitivity_forest.m	figures	core	Create a forest/dumbbell plot for coupling sensitivity analyses.
+code/figures/figure_global_coupling_summary.m	figures	core	Create the global structural-functional coupling summary figure.
+code/figures/figure_alff_falff_main.m	figures	core	Create the main ALFF/fALFF manuscript figure from ROI-level values.
+code/figures/export_manual_mni_stat_nodes.m	figures	core	Export BrainNet node files from manually curated MNI coordinates and statistics.
+code/figures/figure_gretna_top_roi_forest.m	figures	core	Create a forest/strip plot for the top recurrent GRETNA ROIs.
+code/figures/figure_roi_coupling_rankplot.m	figures	core	Create a whole-brain ROI rank plot for structural-functional coupling effects.
+code/figures/figure_alff_falff_forest.m	figures	core	Create a forest plot for representative ALFF/fALFF ROI effects.
+code/figures/figure_sdi_fa_md_forest.m	figures	core	Create a forest plot summarizing representative SDI, FA, and MD effects.
+code/figures/figure_clinical_association_dumbbell.m	figures	core	Create a dumbbell/forest plot for clinical association results.
+code/utils/lookup_aal_label.m	utils	core	Look up an AAL ROI label from a peak coordinate.
+optional_notes/report_excluded_subjects.m	optional	optional	Summarize included/excluded subjects across SC and FC availability.
+optional_notes/summarize_global_coupling_by_group.m	optional	optional	Print simple descriptive summaries for global coupling by group.
+optional_notes/build_coupling_subject_lists.m	optional	optional	Build subject lists for main and sensitivity coupling analyses.
+optional_notes/figure_gretna_heatmap_alternative.m	optional	optional	Alternative GRETNA heatmap implementation kept for reference.
+optional_notes/figure_frontal_coupling_boxplots.m	optional	optional	Alternative frontal boxplot figure kept for reference.
+optional_notes/export_aal_roi_masks_and_nodes.m	optional	optional	Export AAL ROI masks and BrainNet nodes for selected regions.
+optional_notes/extract_roi_diffusion_metrics_extended.m	optional	optional	Extended diffusion extraction script including additional metrics beyond FA/MD.
+optional_notes/fit_roi_diffusion_glm_extended.m	optional	optional	Extended ROI-wise diffusion GLM covering additional diffusion metrics.
+optional_notes/run_two_sample_spm_metrics.m	optional	optional	Run two-sample SPM analyses for ALFF/fALFF/ReHo/VMHC.
+optional_notes/summarize_two_sample_spm_metrics.m	optional	optional	Summarize voxel-wise two-sample SPM results with AAL lookup.
+code/python/assemble_main_figure_panel.py	python	optional	Assemble the main figure panel from two pre-exported images.
+code/python/stack_graph_summary_panels.py	python	optional	Stack two graph-summary images vertically into a composite panel.
+code/python/assemble_alff_falff_node_panels.py	python	optional	Assemble ALFF and fALFF node-rendering images into a labeled composite panel.
+code/python/generate_additional_manuscript_outputs.py	python	optional	Generate additional manuscript-oriented figures and summary tables from processed results.
+code/python/generate_clean_manuscript_outputs.py	python	optional	Generate clean paper-style tables and figures from selected processed files.
+code/python/generate_selected_supplementary_outputs.py	python	optional	Generate selected supplementary figures and tables from processed summary files.
+LICENSE	meta	core	MIT license for code reuse and redistribution.
